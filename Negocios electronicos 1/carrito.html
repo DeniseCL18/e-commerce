@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito de Compra - NDL - Papas Locas</title>
+  <link rel="icon" type="image/png" href="./image/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Fuentes y AOS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- CSS y Scripts -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styless.css">
+  <!-- Se ha ajustado la ruta del script para mantener la consistencia en la estructura de carpetas -->
+  <script defer src="./js/script.js"></script>
+</head>
+<body>
+  <header class="header">
+    <a href="inicio.html">
+      <img src="image/logo.png" alt="Logo Izquierdo" class="logo">
+  </a>
+    <div class="center-content">
+      <img src="image/logoajolo.png" alt="Logo Central">
+      <div class="header-banner">
+        <p>Sabor que enloquece, frescura que sorprende</p>
+      </div>
+    </div>
+    <img src="image/logo.png" alt="Logo Derecho" class="logo">
+  </header>
+  
+  <div class="container-navbar"> 
+    <nav class="navbar container">
+      <ul class="menu">
+        <li><a href="Menu.html">Bienvenida</a></li>
+        <li><a href="inicio.html">Inicio</a></li>
+        <li><a href="conocenos.html">Conócenos</a></li>
+        <li><a href="carta.html">Productos</a></li>
+        <li><a href="contactanos.html">Contáctanos</a></li>
+        <li><a href="promocion.html">Promociones</a></li>
+        <li><a href="ubicanos.html">Ubícanos</a></li>
+      </ul>
+      <div class="container-user">
+        <i class="fa-solid fa-user"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+        <div class="content-shopping-cart">
+          <span class="text">Carrito de compra</span>
+          <span class="number">(0)</span>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+
+
+  <!-- Contenido principal -->
+  <main>
+    <section id="carrito" data-aos="fade-up">
+      <h1>Carrito de Compra</h1>
+      <div class="carrito-container">
+        <!-- Ejemplo de producto en el carrito -->
+        <div class="producto-carrito">
+          <!-- Se ha actualizado la ruta y el texto alternativo de la imagen -->
+          <img src="./image/papis.jpg" alt="papis">
+          <div class="info-producto">
+            <h3>Papas con queso</h3>
+            <p>Cantidad: 2</p>
+            <p>Precio: $10.00</p>
+          </div>
+          <!-- Se agregó aria-label para mejorar la accesibilidad -->
+          <button class="btn" aria-label="Eliminar producto">Eliminar</button>
+        </div>
+        <!-- Se pueden agregar más productos según sea necesario -->
+      </div>
+      <div class="total-carrito">
+        <h2>Total: $20.00</h2>
+        <button class="btn">Proceder al Pago</button>
+      </div>
+    </section>
+  </main>
+  
+  <!-- Pie de página -->
+  <!--footer-->
+<footer data-aos="fade-up">
+  <div class="footer-content">
+    <div class="footer-col footer-about">
+      <p>
+        Somos el epicentro urbano de sabor: nuestras papas locas y bebidas están diseñadas para encender tus momentos con una explosión de frescura y actitud.
+      </p>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/ndlne1?igsh=c3J1bG1qZ3duN2s3" target="_blank"><img src="./image/social.jpg" alt="Instagram" /></a>
+        <a href="https://www.tiktok.com/@ndl362?_t=ZM-8ugpKuOK9uZ&_r=1" target="_blank"><img src="./image/tik-tok.jpg" alt="TikTok" /></a>
+        <a href="https://wa.me/7717761908" target="_blank"><img src="./image/whatsapp.jpg" alt="WhatsApp" /></a>
+      </div>
+    </div>
+    <div class="footer-col footer-links">
+      <h3>Papas & Bebidas</h3>
+      <ul>
+        <li><a href="inicio.html">Inicio</a></li>
+        <li><a href="conocenos.html">Conócenos</a></li>
+        <li><a href="carta.html">Productos</a></li>
+        <li><a href="contactanos.html">Contáctanos</a></li>
+        <li><a href="promocion.html">Promociones</a></li>
+        <li><a href="ubicanos.html">Ubícanos</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="politicas.html">Políticas</a></li>
+        <li><a href="contactanos.html">Contáctanos</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col footer-newsletter">
+      <h3>SUSCRÍBETE A NUESTRO NEWSLETTER</h3>
+      <form>
+        <input type="email" placeholder="correo@ejemplo.com" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" />
+        <button type="submit">SUSCRIBIRSE</button>
+      </form>
+      <div class="footer-payment">
+        <h4>Métodos de Pago</h4>
+        <div class="payment-icons">
+          <img src="./image/visa.jpg" alt="Visa" />
+          <img src="./image/paypal.jpg" alt="PayPal" />
+          <img src="./image/tarjeta.jpg" alt="Tarjetas" />
+          <img src="./image/efectiv.jpg" alt="Efectivo" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <img src="./image/logotecnm.jpg" alt="Logo Izquierdo" class="footer-logo" />
+    <div>
+      <p>&copy; 2025 NDL - Todos los derechos reservados</p>
+      <p>Tecnológico Nacional de México, Campus Pachuca</p>
+    </div>
+    <img src="./image/logotec.jpg" alt=Logo Derecho class="footer-logo" />
+  </div>
+</footer>
+  
+  <!-- Inicialización de AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, easing: 'ease-in-out', once: true });
+  </script>
+</body>
+</html>
